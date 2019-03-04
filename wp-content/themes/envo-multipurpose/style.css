@@ -2049,11 +2049,17 @@ nav.navigation.post-navigation {
     font-size: 15px;
 }
 
-div .source {
+.source {
     border: solid;
     margin: 20px 0;
     padding: 15px;
     background: #EEEEEE;
+}
+.description {
+    border: dashed;
+    margin: 20px 0;
+    padding: 15px;
+    background: #fffd1f4f;
 }
 
 h3.sub-title {
