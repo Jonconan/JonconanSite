@@ -2074,3 +2074,7 @@ li {
 .news-thumb {
     max-width: 300px;
 }
+
+article img {
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
