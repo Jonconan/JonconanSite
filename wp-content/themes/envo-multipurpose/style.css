@@ -2070,3 +2070,7 @@ h3.sub-title {
 li {
     list-style-type: decimal;
 }
+
+.news-thumb {
+    max-width: 300px;
+}
