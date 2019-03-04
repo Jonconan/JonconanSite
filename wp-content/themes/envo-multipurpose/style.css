@@ -2056,7 +2056,7 @@ div .source {
     background: #EEEEEE;
 }
 
-h3 {
+h3 .sub-title {
     line-height: 50px;
     background: #ff000033;
 }
