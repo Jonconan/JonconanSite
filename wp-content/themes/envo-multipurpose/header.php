@@ -1,3 +1,11 @@
+<?php
+if( empty($_SERVER["HTTPS"]) ) {
+	$https_url = "https://jonconan.site".$_SERVER["REQUEST_URI"];
+	header('Location: ' . $https_url);
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
