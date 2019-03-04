@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Jetpack by WordPress.com - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-11-20 03:14:06+0000\n"
+"PO-Revision-Date: 2019-02-15 07:38:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1307,29 +1307,6 @@ msgstr "画像を遅延読み込み"
 msgid "[%1$s] Please moderate: \"%2$s\""
 msgstr "[%1$s] モデレートしてください: \"%2$s\""
 
-#. translators: Comment moderation. 1: Comment action URL
-#: _inc/lib/functions.wp-notify.php:290
-msgid "Approve it: %s"
-msgstr "承認してください: %s"
-
-#: _inc/lib/functions.wp-notify.php:259
-msgid "Pingback excerpt: "
-msgstr "ピンバックの抜粋: "
-
-#: _inc/lib/functions.wp-notify.php:249
-msgid "Trackback excerpt: "
-msgstr "トラックバックの抜粋: "
-
-#. translators: Comment moderation. 1: Comment action URL
-#: _inc/lib/functions.wp-notify.php:145 _inc/lib/functions.wp-notify.php:313
-msgid "Spam it: %s"
-msgstr "スパムと判定: %s"
-
-#. translators: 1: Post title
-#: _inc/lib/functions.wp-notify.php:263
-msgid "A new comment on the post \"%s\" is waiting for your approval"
-msgstr "あなたの投稿 \"%s\" への新規コメントが承認待ちです"
-
 #. translators: 1: Post title
 #: _inc/lib/functions.wp-notify.php:253
 msgid "A new pingback on the post \"%s\" is waiting for your approval"
@@ -1348,21 +1325,34 @@ msgstr "このサイトにプラグインをインストールする権限があ
 msgid "You are not allowed to activate plugins on this site."
 msgstr "このサイトでプラグインを有効化する権限がありません。"
 
+#. translators: 1: Post title
+#: _inc/lib/functions.wp-notify.php:263
+msgid "A new comment on the post \"%s\" is waiting for your approval"
+msgstr "投稿「%s」への新しいコメントが承認待ちです"
+
 #. translators: Comment moderation. 1: Number of comments awaiting approval
 #: _inc/lib/functions.wp-notify.php:320
 msgid "Currently %s comment is waiting for approval. Please visit the moderation panel:"
 msgid_plural "Currently %s comments are waiting for approval. Please visit the moderation panel:"
-msgstr[0] "現在、%s件のコメントが承認待ちです。モデレーション画面にアクセスしてください。"
+msgstr[0] "現在%s件のコメントが承認待ちです。コメントモデレーション画面を開いてください:"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: _inc/lib/functions.wp-notify.php:139 _inc/lib/functions.wp-notify.php:305
-msgid "Delete it: %s"
-msgstr "削除: %s"
+#: _inc/lib/functions.wp-notify.php:290
+msgid "Approve it: %s"
+msgstr "承認する: %s"
+
+#: _inc/lib/functions.wp-notify.php:259
+msgid "Pingback excerpt: "
+msgstr "ピンバック抜粋:"
+
+#: _inc/lib/functions.wp-notify.php:249
+msgid "Trackback excerpt: "
+msgstr "トラックバック抜粋:"
 
 #. translators: Comment moderation. 1: Comment action URL
-#: _inc/lib/functions.wp-notify.php:133 _inc/lib/functions.wp-notify.php:298
-msgid "Trash it: %s"
-msgstr "ゴミ箱に移動: %s"
+#: _inc/lib/functions.wp-notify.php:145 _inc/lib/functions.wp-notify.php:313
+msgid "Spam it: %s"
+msgstr "スパムとしてマークする: %s"
 
 #: _inc/lib/functions.wp-notify.php:128
 msgid "Permalink: %s"
@@ -1372,11 +1362,6 @@ msgstr "パーマリンク: %s"
 #: _inc/lib/functions.wp-notify.php:120
 msgid "[%1$s] Comment: \"%2$s\""
 msgstr "[%1$s] コメント: \"%2$s\""
-
-#. translators: 1: Comment author URL
-#: _inc/lib/functions.wp-notify.php:115 _inc/lib/functions.wp-notify.php:268
-msgid "Email: %s"
-msgstr "メール: %s"
 
 #. translators: 1: comment author, 2: comment author's IP address, 3: comment
 #. author's hostname
@@ -1420,31 +1405,46 @@ msgstr "サイト: %1$s (IP アドレス: %2$s, %3$s)"
 msgid "Primary language for the site."
 msgstr "このサイトの主言語。"
 
-#: _inc/lib/functions.wp-notify.php:112
-msgid "New comment on your post \"%s\""
-msgstr "あなたの投稿 \"%s\" への新規コメント"
-
 #. translators: 1: Post title
 #: _inc/lib/functions.wp-notify.php:102
 msgid "New pingback on your post \"%s\""
 msgstr "あなたの投稿 \"%s\" への新規ピンバック"
 
-#. translators: 1: Post title
-#: _inc/lib/functions.wp-notify.php:91
-msgid "New trackback on your post \"%s\""
-msgstr "あなたの投稿 \"%s\" への新規トラックバック"
-
-#: _inc/lib/functions.wp-notify.php:118
-msgid "You can see all comments on this post here:"
-msgstr "この投稿のすべてのコメントはこちらで表示できます:"
+#: _inc/lib/functions.wp-notify.php:96
+msgid "You can see all trackbacks on this post here:"
+msgstr "この投稿へのすべてのトラックバックはこちらです: "
 
 #: _inc/lib/functions.wp-notify.php:107
 msgid "You can see all pingbacks on this post here:"
-msgstr "この投稿のすべてのピンバックはこちらで表示できます:"
+msgstr "この投稿へのすべてのピンバックはこちらです:"
 
-#: _inc/lib/functions.wp-notify.php:96
-msgid "You can see all trackbacks on this post here:"
-msgstr "この投稿のすべてのトラックバックはこちらで表示できます:"
+#: _inc/lib/functions.wp-notify.php:118
+msgid "You can see all comments on this post here:"
+msgstr "この投稿へのすべてのコメントはこちらです:"
+
+#: _inc/lib/functions.wp-notify.php:112
+msgid "New comment on your post \"%s\""
+msgstr "投稿「%s」に新しいコメントがありました"
+
+#. translators: 1: Post title
+#: _inc/lib/functions.wp-notify.php:91
+msgid "New trackback on your post \"%s\""
+msgstr "投稿「%s」に新しいトラックバックがありました"
+
+#. translators: Comment moderation. 1: Comment action URL
+#: _inc/lib/functions.wp-notify.php:139 _inc/lib/functions.wp-notify.php:305
+msgid "Delete it: %s"
+msgstr "削除する: %s"
+
+#. translators: Comment moderation. 1: Comment action URL
+#: _inc/lib/functions.wp-notify.php:133 _inc/lib/functions.wp-notify.php:298
+msgid "Trash it: %s"
+msgstr "ゴミ箱に移動する: %s"
+
+#. translators: 1: Comment author URL
+#: _inc/lib/functions.wp-notify.php:115 _inc/lib/functions.wp-notify.php:268
+msgid "Email: %s"
+msgstr "メールアドレス: %s"
 
 #: _inc/jetpack-strings.php:681
 msgid "Speed up your site and its content"
@@ -2225,10 +2225,6 @@ msgstr "投稿の最初の画像を自動で使用"
 msgid "Display comment link"
 msgstr "コメントリンクを表示"
 
-#: modules/shortcodes/class.filter-embedded-html-objects.php:246
-msgid "PHP's XML extension is not available. Please contact your hosting provider to enable PHP's XML extension."
-msgstr "PHP の XML 拡張モジュールが利用できません。PHP の XML 拡張モジュールを有効化するよう、ホスティングサービスに連絡してください。"
-
 #: modules/shortcodes/recipe.php:233
 msgctxt "recipe"
 msgid "Source"
@@ -2246,6 +2242,10 @@ msgstr "シンプルペイメントの注文"
 #: modules/simple-payments/simple-payments.php:328
 msgid "Simple Payments products"
 msgstr "シンプルペイメントの商品"
+
+#: modules/shortcodes/class.filter-embedded-html-objects.php:246
+msgid "PHP's XML extension is not available. Please contact your hosting provider to enable PHP's XML extension."
+msgstr "PHP の XML 拡張モジュールは利用できません。PHP の XML 拡張モジュールを有効にするようにホスティング会社に連絡してください。"
 
 #: modules/module-headings.php:112
 msgctxt "Module Description"
@@ -2929,10 +2929,6 @@ msgstr "動画の URL"
 msgid "XML Video Sitemap"
 msgstr "XML 動画のサイトマップ"
 
-#: modules/sitemaps/sitemap-stylist.php:296
-msgid "Caption"
-msgstr "見出し"
-
 #: modules/sitemaps/sitemap-stylist.php:292
 msgid "Image URL"
 msgstr "画像の URL"
@@ -2946,6 +2942,10 @@ msgstr "ページの URL"
 #: modules/sitemaps/sitemap-stylist.php:290
 msgid "XML Image Sitemap"
 msgstr "XML 画像のサイトマップ"
+
+#: modules/sitemaps/sitemap-stylist.php:296
+msgid "Caption"
+msgstr "キャプション"
 
 #: modules/sitemaps/sitemap-stylist.php:180
 msgid "Sitemap URL"
@@ -3048,10 +3048,6 @@ msgstr "カスタマイズ"
 msgctxt "Button label for adding a new item via the toolbar menu"
 msgid "Add"
 msgstr "追加"
-
-#: _inc/jetpack-strings.php:319
-msgid "Pages"
-msgstr "ページ"
 
 #: modules/masterbar/masterbar.php:702 modules/masterbar/masterbar.php:734
 msgctxt "admin bar menu new item label"
@@ -3178,6 +3174,10 @@ msgstr "セキュリティ上の懸念 / サイトがハッキングされた"
 #: class.jetpack-debugger.php:374
 msgid "I'm having trouble connecting Jetpack to WordPress.com."
 msgstr "Jetpack を WordPress.com に接続できない"
+
+#: _inc/jetpack-strings.php:319
+msgid "Pages"
+msgstr "固定ページ"
 
 #: class.jetpack-debugger.php:291
 msgid "A connection problem with WordPress.com."
@@ -3878,10 +3878,6 @@ msgstr "<strong>Facebook ページ</strong>で更新を共有:"
 msgid "Export CSV"
 msgstr "CSV をエクスポート"
 
-#: modules/carousel/jetpack-carousel.php:243
-msgid "Copyright"
-msgstr "著作権"
-
 #: class.jetpack.php:5315
 msgid "Unknown error registering your Jetpack site"
 msgstr "Jetpack サイト登録の際に不明なエラーが発生しました"
@@ -3894,10 +3890,6 @@ msgstr "サブサイトの連携を解除するにはサイト ID を指定す�
 msgid "Site ID must be provided to register a sub-site."
 msgstr "サブサイトを登録するにはサイト ID を指定する必要があります。"
 
-#: class.jetpack-network-sites-list-table.php:60
-msgid "View"
-msgstr "表示数"
-
 #: class.jetpack-jitm.php:99
 msgid "New free service: Show Canada Post shipping rates on your store!"
 msgstr "新無料サービス: カナダ郵政省の配送料をストアで表示"
@@ -3905,6 +3897,14 @@ msgstr "新無料サービス: カナダ郵政省の配送料をストアで表�
 #: class.jetpack-jitm.php:96
 msgid "New free service: Show USPS shipping rates on your store! Added bonus: print shipping labels without leaving WooCommerce."
 msgstr "新無料サービス: 米国郵政公社の配送料をストアで表示。さらに WooCommerce 内で配送用ラベルを印刷できます。"
+
+#: class.jetpack-network-sites-list-table.php:60
+msgid "View"
+msgstr "表示"
+
+#: modules/carousel/jetpack-carousel.php:243
+msgid "Copyright"
+msgstr "著作権表示"
 
 #: class.frame-nonce-preview.php:113
 msgid "Sorry, you are not allowed to preview drafts."
@@ -7409,10 +7409,6 @@ msgstr "Jetpack はネットワーク全体で有効化されており、通知�
 msgid "Learn more"
 msgstr "さらに詳しく"
 
-#: views/admin/network-settings.php:12
-msgid "Network Settings"
-msgstr "ネットワークの設定"
-
 #: views/admin/network-settings.php:36
 msgid "Protect whitelist"
 msgstr "保護ホワイトリスト"
@@ -7447,6 +7443,10 @@ msgstr "https://jetpack.com"
 #: views/admin/network-admin-footer.php:22
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
+
+#: views/admin/network-settings.php:12
+msgid "Network Settings"
+msgstr "サイトネットワーク設定"
 
 #: modules/module-extras.php:62
 msgid "%s (Jetpack)"
@@ -9811,10 +9811,6 @@ msgstr "%2$s に %1$s より"
 msgid "&laquo; Previous"
 msgstr "&laquo; 前へ"
 
-#: modules/minileven/theme/pub/minileven/comments.php:46
-msgid "&larr; Older Comments"
-msgstr "&larr; 古いコメント"
-
 #: modules/minileven/theme/pub/minileven/content-gallery.php:76
 #: modules/minileven/theme/pub/minileven/content.php:49
 #: modules/minileven/theme/pub/minileven/image.php:90
@@ -9877,10 +9873,6 @@ msgstr "おすすめ画像を表示します"
 #: modules/likes/jetpack-likes-settings.php:508
 msgid "Don't show the Reblog button on posts"
 msgstr "投稿にリブログボタンを表示しない"
-
-#: modules/likes.php:187
-msgid "Email me whenever"
-msgstr "メール通知を送信:"
 
 #: modules/minileven.php:64
 msgid "Enable excerpts on front page and on archive pages"
@@ -9956,10 +9948,6 @@ msgstr "「いいね」と共有"
 msgid "Loading..."
 msgstr "読み込み中..."
 
-#: modules/minileven/theme/pub/minileven/functions.php:134
-msgid "Main Sidebar"
-msgstr "メインサイドバー"
-
 #: modules/markdown/easy-markdown.php:250
 #: modules/markdown/easy-markdown.php:252
 msgid "Markdown"
@@ -10020,10 +10008,6 @@ msgstr "次へ &raquo;"
 msgid "No"
 msgstr "いいえ"
 
-#: modules/minileven/theme/pub/minileven/index.php:57
-msgid "Nothing Found"
-msgstr "見つかりません"
-
 #: modules/infinite-scroll/infinity.php:799
 msgid "Older posts"
 msgstr "過去の投稿"
@@ -10052,13 +10036,6 @@ msgstr "on"
 #: modules/minileven/theme/pub/minileven/inc/tweaks.php:94
 msgid "Page %s"
 msgstr "ページ %s"
-
-#: modules/minileven/theme/pub/minileven/content-gallery.php:70
-#: modules/minileven/theme/pub/minileven/content.php:41
-#: modules/minileven/theme/pub/minileven/image.php:74
-#: modules/minileven/theme/pub/minileven/page.php:32
-msgid "Pages:"
-msgstr "ページ:"
 
 #: modules/minileven/theme/pub/minileven/content-gallery.php:16
 #: modules/minileven/theme/pub/minileven/content-gallery.php:63
@@ -10121,10 +10098,6 @@ msgstr "設定を保存"
 #: modules/infinite-scroll/infinity.php:851
 msgid "Scroll back to top"
 msgstr "ページ上部へ戻る"
-
-#: modules/minileven/theme/pub/minileven/index.php:43
-msgid "Search Results for: %s"
-msgstr "検索結果: %s"
 
 #: modules/minileven/theme/pub/minileven/footer.php:59
 msgid "Semantic Personal Publishing Platform"
@@ -10288,6 +10261,33 @@ msgstr "お客様の声アーカイブアイキャッチ画像"
 msgid "Shows %s post on each load."
 msgid_plural "Shows %s posts on each load."
 msgstr[0] "読み込みまれるごとに投稿を%s件表示します。"
+
+#: modules/minileven/theme/pub/minileven/content-gallery.php:70
+#: modules/minileven/theme/pub/minileven/content.php:41
+#: modules/minileven/theme/pub/minileven/image.php:74
+#: modules/minileven/theme/pub/minileven/page.php:32
+msgid "Pages:"
+msgstr "固定ページ:"
+
+#: modules/minileven/theme/pub/minileven/functions.php:134
+msgid "Main Sidebar"
+msgstr "メインスライダー"
+
+#: modules/minileven/theme/pub/minileven/index.php:43
+msgid "Search Results for: %s"
+msgstr "「%s」の検索結果"
+
+#: modules/minileven/theme/pub/minileven/index.php:57
+msgid "Nothing Found"
+msgstr "見つかりませんでした"
+
+#: modules/likes.php:187
+msgid "Email me whenever"
+msgstr "自分宛のメール通知"
+
+#: modules/minileven/theme/pub/minileven/comments.php:46
+msgid "&larr; Older Comments"
+msgstr "&larr; 過去のコメント"
 
 #: modules/custom-post-types/nova.php:328
 #: modules/custom-post-types/nova.php:333
@@ -11403,10 +11403,6 @@ msgstr "フィードバックを WordPress 内から読めますか ?"
 msgid "Cancel reply"
 msgstr "コメントをキャンセル"
 
-#: modules/contact-form/admin.php:826
-msgid "Check for Spam"
-msgstr "スパムのチェック"
-
 #: modules/contact-form/grunion-editor-view.php:219
 #: modules/contact-form/grunion-form-view.php:194
 msgid "Checkbox"
@@ -12051,15 +12047,6 @@ msgstr "投稿や固定ページの校正に自動的に検出した言語を使
 msgid "View full size <span class=\"photo-size\">%1$s<span class=\"photo-size-times\">&times;</span>%2$s</span>"
 msgstr "フルサイズ表示 <span class=\"photo-size\">%1$s<span class=\"photo-size-times\">&times;</span>%2$s</span>"
 
-#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1117
-#: modules/carousel/jetpack-carousel.php:267
-#: modules/contact-form/grunion-contact-form.php:1611
-#: modules/contact-form/grunion-editor-view.php:86
-#: modules/contact-form/grunion-editor-view.php:217
-#: modules/contact-form/grunion-form-view.php:202
-msgid "Website"
-msgstr "ウェブサイト"
-
 #: _inc/lib/class.core-rest-api-endpoints.php:1393
 #: modules/carousel/jetpack-carousel.php:726
 #: modules/shortcodes/slideshow.php:79
@@ -12153,6 +12140,19 @@ msgstr "校正"
 msgctxt "{$date_format} \\a\\t {$time_format}"
 msgid "%1$s \\a\\t %2$s"
 msgstr "%1$s%2$s"
+
+#: _inc/lib/core-api/class.jetpack-core-api-module-endpoints.php:1117
+#: modules/carousel/jetpack-carousel.php:267
+#: modules/contact-form/grunion-contact-form.php:1611
+#: modules/contact-form/grunion-editor-view.php:86
+#: modules/contact-form/grunion-editor-view.php:217
+#: modules/contact-form/grunion-form-view.php:202
+msgid "Website"
+msgstr "サイト"
+
+#: modules/contact-form/admin.php:826
+msgid "Check for Spam"
+msgstr "スパムチェック"
 
 #: class.jetpack.php:4391
 msgctxt "%1$s = deactivation URL, %2$s = \"Deactivate {list of Jetpack module/feature names}"
@@ -12349,10 +12349,6 @@ msgstr "モジュールが見つかりません: %s"
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-install-endpoint.php:82
 msgid "No plugins found."
 msgstr "プラグインが見つかりませんでした。"
-
-#: json-endpoints/jetpack/class.jetpack-json-api-themes-install-endpoint.php:80
-msgid "No themes found."
-msgstr "テーマが見つかりませんでした。"
 
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-modify-endpoint.php:330
 #: json-endpoints/jetpack/class.jetpack-json-api-plugins-modify-endpoint.php:391
@@ -12625,6 +12621,10 @@ msgstr "Jetpack は WordPress.com と連携できませんでした: %(error_key
 #: _inc/jetpack-strings.php:590
 msgid "Your website needs to be publicly accessible to use Jetpack: %(error_key)s"
 msgstr "Jetpack を利用するには、サイトが公開されていて、アクセス制限がかかっていない必要があります: %(error_key)s"
+
+#: json-endpoints/jetpack/class.jetpack-json-api-themes-install-endpoint.php:80
+msgid "No themes found."
+msgstr "テーマは見つかりませんでした。"
 
 #: class.jetpack-cli.php:443
 msgctxt "\"wp jetpack module activate\" is a command - do not translate"
