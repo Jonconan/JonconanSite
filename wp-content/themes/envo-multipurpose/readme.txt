@@ -2,8 +2,9 @@
 Contributors: EnvoThemes
 Tags: one-column, two-columns, right-sidebar, custom-background, custom-menu, featured-images, theme-options, translation-ready
 Requires at least: 4.4
-Tested up to: 4.9.7
-Version: 1.1.1
+Tested up to: 5.2.2
+Requires PHP: 5.2.4
+Stable tag: 1.1.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,6 +70,13 @@ All other resources and theme elements are licensed under the [GNU GPL](http://w
 Envo Multipurpose is distributed under the terms of the GNU GPL (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+
+= Version 1.1.6 =
+* Updated notice layout
+
+= Version 1.1.5 =
+* Added support for wp_body_open()
+* Code improvements and fixes
 
 = Version 1.1.4 =
 * Fixed product sticky info bar on Safari browser

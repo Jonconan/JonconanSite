@@ -2,7 +2,7 @@
 /**
  * The current version of the theme.
  */
-define( 'ENVO_MULTIPURPOSE_VERSION', '1.1.3' );
+define( 'ENVO_MULTIPURPOSE_VERSION', '1.1.6' );
 
 add_action( 'after_setup_theme', 'envo_multipurpose_setup' );
 
@@ -237,7 +237,10 @@ require_once( trailingslashit( get_template_directory() ) . 'includes/class-widg
  */
 require_once( trailingslashit( get_template_directory() ) . 'includes/widgets.php' );
 
-
+/**
+ * Register theme notification
+ */
+require_once( trailingslashit( get_template_directory() ) . 'lib/new-theme-notice.php' );
 
 /**
  * Register Theme Info Page
@@ -686,3 +689,19 @@ if ( !function_exists( 'envo_multipurpose_check_widget' ) ) {
 	}
 
 }
+
+if ( ! function_exists( 'wp_body_open' ) ) :
+    /**
+     * Fire the wp_body_open action.
+     *
+     * Added for backwards compatibility to support pre 5.2.0 WordPress versions.
+     *
+     */
+    function wp_body_open() {
+        /**
+         * Triggered after the opening <body> tag.
+         *
+         */
+        do_action( 'wp_body_open' );
+    }
+endif;

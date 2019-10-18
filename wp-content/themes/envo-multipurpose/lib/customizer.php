@@ -7,8 +7,8 @@
 
 $envo_multipurpose_sections = array( 'info', 'demo' );
 
-foreach( $envo_multipurpose_sections as $s ){
-    require get_template_directory() . '/lib/customizer/' . $s . '.php';
+foreach( $envo_multipurpose_sections as $sections ){
+    require get_template_directory() . '/lib/customizer/' . $sections . '.php';
 }
 
 function envo_multipurpose_customizer_scripts() {

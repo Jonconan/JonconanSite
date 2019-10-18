@@ -139,7 +139,7 @@ function envo_multipurpose_admin_notice() {
 	$theme_data	 = wp_get_theme();
 	if ( !get_user_meta( $user_id, esc_html( $theme_data->get( 'TextDomain' ) ) . '_notice_ignore' ) ) {
 		?>
-		<div class="notice envo-multipurpose-notice">
+		<div class="notice notice-success envo-multipurpose-notice">
 
 			<h1>
 				<?php
@@ -272,8 +272,11 @@ function envo_multipurpose_admin_dismiss_actions() {
 			$actions_dismiss[ $action_key ] = 'hide';
 		}
 		update_option( 'envo_multipurpose_actions_dismiss', $actions_dismiss );
-		$url = sanitize_text_field( wp_unslash( $_SERVER[ 'REQUEST_URI' ] ) );
-		$url = remove_query_arg( 'envo_multipurpose_action_notice', $url );
+        $url = null;
+		if ( isset( $_SERVER[ 'REQUEST_URI' ] ) ) { // Input var okay.
+			$url = sanitize_text_field( wp_unslash( $_SERVER[ 'REQUEST_URI' ] ) );
+			$url = remove_query_arg( 'envo_multipurpose_action_notice', $url );
+		}
 		wp_redirect( $url );
 		die();
 	}
@@ -285,9 +288,10 @@ function envo_multipurpose_admin_dismiss_actions() {
 		if ( $from && $to ) {
 			$mods = get_option( "theme_mods_" . $from );
 			update_option( "theme_mods_" . $to, $mods );
-
-			$url = sanitize_text_field( wp_unslash( $_SERVER[ 'REQUEST_URI' ] ) );
-			$url = add_query_arg( array( 'copied' => 1 ), $url );
+            if ( isset( $_SERVER[ 'REQUEST_URI' ] ) ) { // Input var okay.
+    			$url = sanitize_text_field( wp_unslash( $_SERVER[ 'REQUEST_URI' ] ) );
+    			$url = add_query_arg( array( 'copied' => 1 ), $url );
+    		}
 			wp_redirect( $url );
 			die();
 		}

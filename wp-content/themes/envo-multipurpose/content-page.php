@@ -3,11 +3,11 @@
 	<article class="col-md-<?php envo_multipurpose_main_content_width_columns(); ?>">
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>                          
 				<div <?php post_class(); ?>>
+					<?php envo_multipurpose_thumb_img( 'envo-multipurpose-single', '', false, true ); ?>
 					<header>                              
 						<?php the_title( '<h1 class="single-title">', '</h1>' ); ?>
 						<time class="posted-on published" datetime="<?php the_time( 'Y-m-d' ); ?>"></time>                                                        
 					</header>
-					<?php envo_multipurpose_thumb_img( 'envo-multipurpose-single', '', false, true ); ?>
 					<div class="main-content-page">                            
 						<div class="single-entry-summary">                              
 							<?php do_action( 'envo_multipurpose_before_content' ); ?>
